@@ -1,0 +1,15 @@
+﻿Image size: 1254x1254
+Found 13 filtered stars in this region.
+Index 0: Center=(452, 300), Size=334, Dist=175.2
+Index 1: Center=(460, 372), Size=327, Dist=178.8
+Index 2: Center=(474, 225), Size=321, Dist=174.1
+Index 3: Center=(498, 430), Size=333, Dist=177.6
+Index 4: Center=(544, 180), Size=340, Dist=152.6
+Index 5: Center=(562, 463), Size=316, Dist=168.1
+Index 6: Center=(628, 166), Size=334, Dist=142
+Index 7: Center=(694, 463), Size=313, Dist=168.9
+Index 8: Center=(710, 180), Size=337, Dist=152.6
+Index 9: Center=(758, 430), Size=334, Dist=179
+Index 10: Center=(780, 225), Size=320, Dist=174.1
+Index 11: Center=(795, 372), Size=328, Dist=179.8
+Index 12: Center=(803, 300), Size=327, Dist=176.2

@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #FCF7FC; /* Crisp luminous pink-lavender canvas */
+  --foreground: #180327; /* Deep midnight purple text */
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Overriding fonts to load Playfair Display on Outfit and Inter on standard sans */
+  --font-outfit: var(--font-playfair);
+  --font-sans: var(--font-inter);
+
+  /* High-Contrast Pink & Purple Color Theme mappings */
+  --color-deep-forest: #280544; /* Imperial Midnight Plum */
+  --color-dark-green: #150225;  /* Obsidian Purple */
+  --color-medium-green: #7E22CE; /* Vibrant Royal Purple */
+  --color-fresh-green: #D946EF; /* Vivid Fuchsia */
+  --color-light-sage: #F5DBF8;  /* Soft Pastel Lilac */
+  --color-lime-accent: #FF2A85; /* Electric Hot Pink */
+  --color-cream: #FFFFFF;      /* Clean White Card Surface */
+  --color-warm-cream: #FBF0FB; /* Soft Blush Lilac Canvas */
+  --color-gold: #EC4899;       /* Radiant Hot Pink */
+  --color-dark-text: #1E042E;   /* Deep high-contrast purple-black text */
+
+  --color-slate-50: #FAF2FB;   /* Soft pink-lavender surface */
+  --color-slate-100: #F5DFF8;  /* Muted contrast lilac */
+  --color-slate-200: #EBC7F0;  /* Soft lilac reflection */
+  --color-slate-300: #D89FE0;  /* Purple-pink borders */
+  --color-slate-400: #A85CB5;  /* Secondary text purple */
+  --color-slate-500: #7E22CE;  /* Vibrant Royal Purple */
+  --color-slate-550: #6B21A8;  /* Rich Purple */
+  --color-slate-600: #581C87;  /* Deep Violet */
+  --color-slate-650: #D946EF;  /* Vivid Fuchsia */
+  --color-slate-700: #3B0764;  /* Royal Plum */
+  --color-slate-800: #280544;  /* Imperial Midnight Plum */
+  --color-slate-850: #200336;  /* Dark Plum */
+  --color-slate-900: #1A032C;  /* Dark Obsidian Plum */
+  --color-slate-950: #120120;  /* Deepest Night Plum */
+  
+  --color-amber-50: #FDF2F8;
+  --color-amber-100: #FCE7F3;
+  --color-amber-200: #FBCFE8;
+  --color-amber-400: #F472B6;
+  --color-amber-500: #EC4899;  /* Radiant Hot Pink */
+  --color-amber-600: #DB2777;  /* Vivid Magenta */
+  --color-amber-700: #BE185D;
+  --color-amber-800: #9D174D;
+  --color-amber-900: #831843;
+  
+  --color-lime-100: #FDF2F8;
+  --color-lime-400: #FF69B4;
+  --color-lime-500: #FF2A85;   /* Electric Neon Pink Accent */
+  --color-lime-600: #E11D74;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+/* 12 Star Twinkle & Sparkle Background Pattern */
+.leaf-pattern,
+.star-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 10 L42 30 L55 35 L42 40 L40 60 L38 40 L25 35 L38 30 Z' fill='none' stroke='%239333EA' stroke-width='0.4' stroke-opacity='0.08'/%3E%3Ccircle cx='70' cy='20' r='1.5' fill='%23EC4899' fill-opacity='0.12'/%3E%3Ccircle cx='15' cy='65' r='1' fill='%239333EA' fill-opacity='0.10'/%3E%3Cpath d='M70 55 L71 62 L78 63 L71 65 L70 72 L69 65 L62 63 L69 62 Z' fill='none' stroke='%23EC4899' stroke-width='0.3' stroke-opacity='0.07'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+.leaf-pattern-dark,
+.star-pattern-dark {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 10 L42 30 L55 35 L42 40 L40 60 L38 40 L25 35 L38 30 Z' fill='none' stroke='%23FF2A85' stroke-width='0.5' stroke-opacity='0.12'/%3E%3Ccircle cx='70' cy='20' r='1.5' fill='%23FF2A85' fill-opacity='0.20'/%3E%3Ccircle cx='15' cy='65' r='1' fill='%23C084FC' fill-opacity='0.18'/%3E%3Cpath d='M70 55 L71 62 L78 63 L71 65 L70 72 L69 65 L62 63 L69 62 Z' fill='none' stroke='%23C084FC' stroke-width='0.4' stroke-opacity='0.15'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* Pink to Purple Radiant Dividers */
+.divider-gold,
+.divider-pink-purple {
+  position: relative;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.7) 35%, rgba(147, 51, 234, 0.7) 65%, transparent);
+  border: none;
+}
+
+.divider-gold-vertical {
+  width: 1px;
+  background: linear-gradient(180deg, transparent, rgba(236, 72, 153, 0.3) 25%, rgba(147, 51, 234, 0.3) 75%, transparent);
+}
+
+.shimmer-gold,
+.shimmer-pink {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer-gold::after,
+.shimmer-pink::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 45%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 55%
+  );
+  transform: rotate(45deg);
+  transition: transform 0.6s ease;
+}
+.shimmer-gold:hover::after,
+.shimmer-pink:hover::after {
+  transform: translate(30%, 30%) rotate(45deg);
+}
+
+/* Gradient Utility Classes */
+.bg-gradient-pink-purple {
+  background: linear-gradient(135deg, #EC4899 0%, #7E22CE 100%);
+}
+
+.bg-gradient-pink-purple-hover:hover {
+  background: linear-gradient(135deg, #F43F5E 0%, #6B21A8 100%);
+}
+
+.text-gradient-pink-purple {
+  background: linear-gradient(135deg, #EC4899 0%, #7E22CE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

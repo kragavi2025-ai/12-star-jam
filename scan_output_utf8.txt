@@ -1,0 +1,18 @@
+﻿Image size: 1254x1254
+Found 16 stars in this region.
+Index 0: Center=(453, 300), Size=329
+Index 1: Center=(460, 372), Size=327
+Index 2: Center=(474, 225), Size=321
+Index 3: Center=(498, 430), Size=333
+Index 4: Center=(544, 180), Size=340
+Index 5: Center=(576, 264), Size=52
+Index 6: Center=(628, 390), Size=784
+Index 7: Center=(628, 166), Size=334
+Index 8: Center=(702, 414), Size=67
+Index 9: Center=(710, 180), Size=337
+Index 10: Center=(736, 334), Size=51
+Index 11: Center=(740, 273), Size=56
+Index 12: Center=(758, 430), Size=334
+Index 13: Center=(780, 225), Size=320
+Index 14: Center=(795, 372), Size=328
+Index 15: Center=(801, 300), Size=316
